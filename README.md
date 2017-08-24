@@ -14,6 +14,8 @@ When I was studying object oriented programming I wanted to develop a game as a 
 Honestly I found graphic projects very interesting, projects that give to you the tools for building or creating things that allow you to explain or demonstrate an idea.
 </div>
 
+
+
 ## Projects
 
 ### AlgBuilder
