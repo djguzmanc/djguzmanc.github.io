@@ -8,13 +8,11 @@ Computing engineering student at Universidad Nacional de Colombia, 4 years have 
 
 <div style="text-align: justify">
 When I was studying object oriented programming I wanted to develop a game as a class project, but I thought Java wasn't the best way to handle graphics, then I found Processing (2.0 at the time) and started to create my game. Probably developed 3 games that just disappear when my hard drive crashed, however I continued with Processing developing for my career projects.
-</div>
+</div><br>
 
 <div style="text-align: justify">
 Honestly I found graphic projects very interesting, projects that give to you the tools for building or creating things that allow you to explain or demonstrate an idea.
-</div>
-
-
+</div><br>
 
 ## Projects
 
@@ -22,7 +20,7 @@ Honestly I found graphic projects very interesting, projects that give to you th
 
 <div style="text-align: justify">
 I'm currently working on a programming language project that allows you to create graphical animations for data structures like array o linked lists, even graphs. All graphics were handled with Processing.
-</div>
+</div><br>
 
 It can be found [here](https://github.com/djguzmanc/AlgBuilder).
 
@@ -30,7 +28,7 @@ It can be found [here](https://github.com/djguzmanc/AlgBuilder).
 
 <div style="text-align: justify">
 One day I was trying to test a shape configuration for the game of life and see its results, but online editors just offer big grids with small cells which makes it difficult to design shapes, so I started to develop this editor, allowing the user to create, save and edit shapes, even debugging generations. Made with pure Processing.
-</div>
+</div><br>
 
 It can be found [here](https://github.com/djguzmanc/GameOfLife).
 
