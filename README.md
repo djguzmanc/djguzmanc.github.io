@@ -6,23 +6,35 @@ Computing engineering student at Universidad Nacional de Colombia, 4 years have 
 
 ## Interests
 
+<div style="text-align: right">
 When I was studying object oriented programming I wanted to develop a game as a class project, but I thought Java wasn't the best way to handle graphics, then I found Processing (2.0 at the time) and started to create my game. Probably developed 3 games that just disappear when my hard drive crashed, however I continued with Processing developing for my career projects.
+</div>
 
+<div style="text-align: right">
 Honestly I found graphic projects very interesting, projects that give to you the tools for building or creating things that allow you to explain or demonstrate an idea.
+</div>
 
 ## Projects
 
 ### AlgBuilder
 
+<div style="text-align: right">
 I'm currently working on a programming language project that allows you to create graphical animations for data structures like array o linked lists, even graphs. All graphics were handled with Processing.
+</div>
 
 It can be found [here](https://github.com/djguzmanc/AlgBuilder).
 
 ### Conway's Game of life editor
 
+<div style="text-align: right">
 One day I was trying to test a shape configuration for the game of life and see its results, but online editors just offer big grids with small cells which makes it difficult to design shapes, so I started to develop this editor, allowing the user to create, save and edit shapes, even debugging generations. Made with pure Processing.
+</div>
 
 It can be found [here](https://github.com/djguzmanc/GameOfLife).
+
+## Contact
+
+Email `djguzmanc@unal.edu.co`
 
 <!---
 
