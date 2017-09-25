@@ -65,48 +65,15 @@ Introduces the pixel gradient, removing the binary idea of a pixel ( it is black
 ### Weighted filtering
 As an improvement for box filtering, ir gives a better result, but sacrifices time.
 
+
+
 This techniques are commonly used for font rasterization, here is an example
 
+![Alt text](/images/smooth_font.PNG)
+
+This an image with a font properly rasterized, it doesn't matter which algorithm it used. Now let's see how looks the same word without antialiasing rasterization.
+
+![Alt text](/images/no_smooth_font.PNG)
 
 
 
-
-<!---
-
-You can use the [editor on GitHub](https://github.com/djguzmanc/djguzmanc.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/djguzmanc/djguzmanc.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
---->
