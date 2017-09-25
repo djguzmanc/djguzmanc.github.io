@@ -83,5 +83,33 @@ This an image with a font properly rasterized, it doesn't matter which algorithm
 
 One may say, well, it is readable too, but serif fonts may became unredable or painfull to see.
 
+___
+
+## Method
+
+Let's take a more detailed look to that algorithms described above.
+
+### Point sampling
+
+Let's rasterize the following line 
+
+<img src="/images/line.PNG" width="300">
+
+The first thing one might do is to represent this line as a rect, so we can see more easily which pixels shall we paint and which not. Don't forget that this line is represented by two points, specifying the beginning and the end of the line.
+
+<img src="/images/line2.PNG" width="300">
+
+Then we can choose those pixels whose centers fall inside de rect
+
+<img src="/images/line3.PNG" width="300">
+
+Finally if we paint that pixels we get a line, or a "line"?
+
+<img src="/images/line4.PNG" width="300">
+
+
+
+
+
 
 
