@@ -36,6 +36,25 @@ It can be found [here](https://github.com/djguzmanc/GameOfLife).
 
 Email `djguzmanc@unal.edu.co`
 
+<p align="center">
+  
+  ### Antialiasing (Rasterization)
+
+</p>
+
+## Introduction
+<div style="text-align: justify">
+The human kind is always researching to give more reality to computer graphics, but reality is based on a continuous world, and unfortunately the computers are not, they work on a discrete world, that means a finit resolution for all screens so, how can computers render a non horizontal or non vertical line? How can computers represent a curve with just a bunch of pixels? Do you always see pictures as this one?
+</div><br>
+
+![Continuous image defined by ray tracing](/images/img.PNG)
+
+<div style="text-align: justify">
+Yo didn't right? that's because of the antialiasing algorithm, which allows us to give more reality to the pixels that represent an edge.
+</div><br>
+
+## State of the art
+
 <!---
 
 You can use the [editor on GitHub](https://github.com/djguzmanc/djguzmanc.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
