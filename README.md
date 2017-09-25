@@ -51,13 +51,23 @@ Yo didn't right? that's because of the antialiasing algorithm, which allows us t
 
 ## State of the art
 
-Informally the antialiasing can be defined as throwing the detail but, _carefully_. So, if you have thrown the detail how do you recover it?, well, there are a few techniques:
+Informally the antialiasing can be defined as throwing the detail but, _carefully_. So, if you have thrown the detail how do you recover it?, well, there are a few easy techniques:
 
 ### Point sampling
 
+It is the easiest one, but as fast as you recover an image the lower detail you get.
+
+### Bresenham lines
+
+Not better than point sampling, but gives more detail.
+
 ### Box filtering
 
+Introduces the pixel gradient, removing the binary idea of a pixel ( it is black or it is white ).
+
 ### Weighted filtering
+
+As an improvement for box filtering, ir gives a better result, but sacrifices time.
 
 <!---
 
