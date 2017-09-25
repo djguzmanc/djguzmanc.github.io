@@ -36,7 +36,7 @@ It can be found [here](https://github.com/djguzmanc/GameOfLife).
 
 Email `djguzmanc@unal.edu.co`
 
-# Antialiasing (Rasterization)
+# Anti-aliasing (Rasterization)
 
 ## Introduction
 <div style="text-align: justify">
@@ -50,6 +50,14 @@ Yo didn't right? that's because of the antialiasing algorithm, which allows us t
 </div><br>
 
 ## State of the art
+
+Informally the antialiasing can be defined as throwing the detail but, _carefully_. So, if you have thrown the detail how do you recover it?, well, there are a few techniques:
+
+### Point sampling
+
+### Box filtering
+
+### Weighted filtering
 
 <!---
 
