@@ -124,6 +124,8 @@ int[] pixelToFill( int column ) {
 }
 ```
 
+But we know that multiplication and rounding could be slow, so let's optimize that algorithm!. This optimization known as DDA (digital differential analyzer)
+
 
 
 
