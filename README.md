@@ -112,7 +112,7 @@ Finally if we paint that pixels we get a line, or a "line"?
 A line is given by the equation _y = mx + b_, the simplest aproximation is to evaluate the function for each column, then we can round that _y_ value and find the closest pixel center. The following java code shows an aproximation for this algorithm:
 
 ``` java
-float fun( x ) {
+float fun( int x ) {
   return 0.37 * x + 1.91;
 }
 
