@@ -109,7 +109,7 @@ Finally if we paint that pixels we get a line, or a "line"?
 
 #### About computational performance
 
-A line is given by the equation <img src="/images/line_eq.PNG" width="100" align="top">, the simplest aproximation is to evaluate the function for each column, then we can round that _y_ value and find the closest pixel center. The following java code shows an aproximation for this algorithm:
+A line is given by the equation _y = mx + b_, the simplest aproximation is to evaluate the function for each column, then we can round that _y_ value and find the closest pixel center. The following java code shows an aproximation for this algorithm:
 
 ``` java
 float fun( x ) {
