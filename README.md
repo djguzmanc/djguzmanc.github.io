@@ -107,8 +107,22 @@ Finally if we paint that pixels we get a line, or a "line"?
 
 <img src="/images/line4.PNG" width="300">
 
+#### About computational performance
 
+A line is given by the equation <img src="/images/line_eq.PNG" width="100" align="top">, the simplest aproximation is to evaluate the function for each column, then we can round that _y_ value and find the closest pixel center. The following java code shows an aproximation for this algorithm:
 
+``` java
+float fun( x ) {
+  return 0.37 * x + 1.91;
+}
+
+int[] pixelToFill( int column ) {
+  int ans[] = new int[ 2 ];
+  ans[ 0 ] = column;
+  ans[ 1 ] = Math.round( fun( column ) );
+  return ans;
+}
+```
 
 
 
