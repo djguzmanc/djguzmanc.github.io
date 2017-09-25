@@ -36,6 +36,10 @@ It can be found [here](https://github.com/djguzmanc/GameOfLife).
 
 Email `djguzmanc@unal.edu.co`
 
+___
+
+___
+
 # Anti-aliasing (Rasterization)
 
 ## Introduction
@@ -48,6 +52,8 @@ The human kind is always researching to give more reality to computer graphics, 
 <div style="text-align: justify">
 Yo didn't right? that's because of the antialiasing algorithm, which allows us to give more reality to the pixels that represent an edge.
 </div><br>
+
+___
 
 ## State of the art
 
@@ -65,7 +71,7 @@ Introduces the pixel gradient, removing the binary idea of a pixel ( it is black
 ### Weighted filtering
 As an improvement for box filtering, ir gives a better result, but sacrifices time.
 
-
+<br>
 
 This techniques are commonly used for font rasterization, here is an example
 
@@ -74,6 +80,8 @@ This techniques are commonly used for font rasterization, here is an example
 This an image with a font properly rasterized, it doesn't matter which algorithm it used. Now let's see how looks the same word without antialiasing rasterization.
 
 ![Alt text](/images/no_smooth_font.PNG)
+
+One may say, well, it is readable too, but serif fonts may became unredable or painfull to see.
 
 
 
