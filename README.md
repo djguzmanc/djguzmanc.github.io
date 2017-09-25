@@ -36,11 +36,7 @@ It can be found [here](https://github.com/djguzmanc/GameOfLife).
 
 Email `djguzmanc@unal.edu.co`
 
-<p align="center">
-  
-  ### Antialiasing (Rasterization)
-
-</p>
+# Antialiasing (Rasterization)
 
 ## Introduction
 <div style="text-align: justify">
