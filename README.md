@@ -44,7 +44,7 @@ ___
 
 ## Introduction
 <div style="text-align: justify">
-The human kind is always researching to give more reality to computer graphics, but reality is based on a continuous world, and unfortunately the computers are not, they work on a discrete world, that means a finit resolution for all screens so, how can computers render a non horizontal or non vertical line? How can computers represent a curve with just a bunch of pixels? Do you always see pictures as this one?
+The human kind is always researching to give more reality to computer graphics, but reality is based on a continuous world, and unfortunately the computers are not, they work on a discrete world, that means a finit resolution for all screens so, how can computers render a non horizontal or non vertical line? How can computers represent a curve with just a bunch of pixels? Do you always see pictures like this one?
 </div><br>
 
 ![Alt text](/images/img.PNG)
@@ -124,7 +124,39 @@ int[] pixelToFill( int column ) {
 }
 ```
 
-But we know that multiplication and rounding could be slow, so let's optimize that algorithm!. This optimization known as DDA (digital differential analyzer)
+We know that multiplication and rounding could be slow, so let's optimize that algorithm!. This optimization known as DDA (digital differential analyzer). Look at the following picture:
+
+<img src="/images/ENE.PNG" width="300">
+
+For the fourth column there are 2 options and you just need to decide between E and NE points, take a closer look and you'll note that the longest distance between the two points is 1 unit and if the line just crosses right at the middle the distance to each point may be at least 0.5. All right! we have a number decision, but how do we calc that distance value? _remember that we don't want to multiply anything!_
+
+Look at the following equation
+
+`>` _d = m( x + 1 ) + b - y_
+
+If _d > 0.5_ we can decide!, for the first column, but, what about the rest of the colums? We don't need to calc anything else, just need integer steps for _x_ and _y_, it means a simple addition. The following pseudocode explains it better:
+
+```
+x = ceil( x0 )
+y = round( m * x + b )
+d = m * ( x + 1 ) + b – y
+while x < floor( x1 )
+  if d > 0.5
+    y += 1
+    d –= 1
+  x += 1
+  d += m
+  output( x, y )
+```
+Note that we just need one multiplication for the first _d_ calc, then we use integer steps for _d_, _x_ and _y_, maybe the next image clarifies the concept...
+
+<img src="/images/integerSteps.PNG" width="300">
+
+
+
+
+
+
 
 
 
