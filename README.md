@@ -62,13 +62,12 @@ Informally the antialiasing can be defined as throwing the detail but, _carefull
 ### Point sampling
 It is the easiest one, but as fast as you recover an image the lower detail you get.
 
-### Bresenham lines
-Not better than point sampling, but gives more detail.
+### Antialiasing techniques
 
-### Box filtering
+#### Box filtering
 Introduces the pixel gradient, removing the binary idea of a pixel ( it is black or it is white ).
 
-### Weighted filtering
+#### Weighted filtering
 As an improvement for box filtering, ir gives a better result, but sacrifices time.
 
 <br>
@@ -152,6 +151,49 @@ Note that we just need one multiplication for the first _d_ calc, then we use in
 
 <img src="/images/integerSteps.PNG" width="300">
 
+<br>
+
+Now that we've met a basic way to draw a line and an optimized way, let's take a look on how antialiasing algorithms give more detail. The line that we've been looking at through this post should be antialiased in this way:
+
+<img src="/images/line5.PNG" width="300">
+
+How do we calc how much gray should be a single pixel? Note that we're not picking between two options, there's no more black or white, it just has turned on a quantitative question.
+
+### Box filtering
+
+A simple way to decide how much black contains a pixel is to compute coverage fraction by counting subpixels, this algorithm is also known by supersampling, look at this picture
+
+<img src="/images/line6.PNG" width="300">
+
+As you can see, each pixel is divided into 25 subpixels, then the rect will cover some of them, telling us how much black should take that pixel, depending on the covered area. Simple, accurate but slow.
+
+### Weighted filtering
+
+Box filtering has a little problem, you should note that the edge area and the area near to the center have the same weight, and that's not correct! Actually the area near to the center must be darker, that's when weighted filtered appears, given more weight to the center of that subpixels.
+
+<img src="/images/line7.PNG" width="300">
+
+This image shows us how weighted subpixels help us to choose the right gray scale for the big pixel. Once we have that clear just need to add those weighted value in order to get the pixel value:
+
+<img src="/images/line8.PNG" width="300">
+<br>
+
+
+## Comparing methods
+
+We've seen a lot of methods to recover detail, but which is better? The faster one, the high quality one? it depends on what are you looking for, let's take a look
+
+### Point sampling results
+
+<img src="/images/lines.PNG" width="300">
+
+### Box filtering results
+
+<img src="/images/lines2.PNG" width="300">
+
+### Weighted filtering results (or Gaussian filter too)
+
+<img src="/images/lines3.PNG" width="300">
 
 
 
