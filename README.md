@@ -195,8 +195,9 @@ We've seen a lot of methods to recover detail, but which is better? The faster o
 
 <img src="/images/lines3.PNG" width="300">
 
+<br>
 
-
+Ass you can see, the Gaussian filter looks better, but it is the slower one. 
 
 
 
